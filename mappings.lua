@@ -3,6 +3,8 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+local buffer = require("astronvim.utils.buffer")
+
 return {
   -- first key is the mode
   v = {
@@ -21,7 +23,17 @@ return {
   },
   n = {
     -- second key is the lefthand side of the map
-
+    ["<S-h>"] = {function ()
+      buffer.nav(-(vim.v.count > 0 and vim.v.count or 1))
+    end,
+      desc = "Previous buffer",
+    },
+    ["<S-l"] = {
+      function()
+        buffer.nav(vim.v.count > 0 and vim.v.count or 1)
+      end,
+      desc = "Next buffer",
+    },
     ["J"] = {"mzJ`z"},
     ["<C-d>"] = {"<C-d>zz"},
     ["<C-u>"] = {"<C-u>zz"},

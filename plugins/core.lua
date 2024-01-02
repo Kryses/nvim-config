@@ -17,6 +17,7 @@ return {
       }
       local button, get_icon = require("astronvim.utils").alpha_button, require("astronvim.utils").get_icon
       table.insert(opts.section.buttons.val, button("LDR f p", get_icon("Search", 2, true ) .. "Find Project  "))
+      table.insert(opts.section.buttons.val, button("LDR S f", get_icon("Session", 2, true ) .. "Find Session"))
       return opts
     end,
   },
