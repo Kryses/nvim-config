@@ -4,6 +4,7 @@ return {
     "goolord/alpha-nvim",
     opts = function(_, opts)
       -- customize the dashboard header
+      local dashboard = require("alpha.themes.dashboard")
       opts.section.header.val = {
         [[  _  __            __      ___            ]],
         [[ | |/ /            \ \    / (_)           ]],
@@ -14,6 +15,8 @@ return {
         [[             __/ |                        ]],
         [[            |___/                         ]],
       }
+      local button, get_icon = require("astronvim.utils").alpha_button, require("astronvim.utils").get_icon
+      table.insert(opts.section.buttons.val, button("LDR f p", get_icon("Search", 2, true ) .. "Find Project  "))
       return opts
     end,
   },

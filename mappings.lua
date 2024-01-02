@@ -36,8 +36,9 @@ return {
     -- ['<C-j>'] = {'<cmd>cprev<cr>zz'},
     ['<leader>k'] = { '<cmd>lnext<cr>zz' , desc = 'Next Location List'},
     ['<leader>j'] = { '<cmd>lprev<cr>zz', desc = 'Previous Location List' },
-    ["<leader>s"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = 'Substitute Current'}, 
+    ["<leader>s"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = 'Substitute Current'},
     ["<leader>x"] = { "<cmd>!chmod +x %<CR>", desc = "Make Executible" },
+    ["<leader>fp"] = { "<cmd> lua require('telescope').extensions.projects.projects() <cr>", desc='Find Projects'},
 
     -- navigate buffer tabs with `H` and `L`
     L = {
