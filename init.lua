@@ -33,6 +33,7 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
+          "python"
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
@@ -50,7 +51,7 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "pyright"
     },
   },
 
@@ -70,6 +71,16 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "Popup", { bg = "none" })
+    vim.api.nvim_set_hl(0, "VimTreeNormal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "VimTreeNormalNC", { bg = "none" })
+    vim.api.nvim_set_hl(0, "VimTreePopup", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    vim.api.nvim_set_hl(0, "CursorLine", { bg = "none" })
+    vim.api.nvim_set_hl(0, "TabLine", { bg = "none" })
+    vim.api.nvim_set_hl(0, "TabLineFill", { bg = "none" })
     -- vim.filetype.add {
     --   extension = {
     --     foo = "fooscript",
