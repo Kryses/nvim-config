@@ -13,6 +13,15 @@ return {
     ['<leader>d'] = {'"_d', desc='Clear clipboard'},
     ['<leader>y'] = {'"+y', desc = 'Copy to clipboard'},
     ['<leader>Y'] = {'"+Y', desc = 'Copy to clipboard'},
+    ["<leader>a"] = { desc=" Chat GPT"},
+    ["<leader>ap"] = { "<cmd>ChatGPT<cr>", desc="Chat GPT Prompt"},
+    ["<leader>ac"] = { "<cmd>ChatGPTCompleteCode<cr>", desc="Complete Code"},
+    ["<leader>aa"] = { "<cmd>ChatGPTActAs<cr>", desc="Chat GPT Act As"},
+    ["<leader>ae"] = { "<cmd>ChatGPTRun explain_code<cr>", desc="Explain Code"},
+    ["<leader>as"] = { "<cmd>ChatGPTRun summarize_code<cr>", desc="Summarize Code"},
+    ["<leader>af"] = { "<cmd>ChatGPTRun fix_bugs<cr>", desc="Fix Bugs"},
+    ["<leader>ao"] = { "<cmd>ChatGPTRun optimize_code<cr>", desc="Optimize Code"},
+    ["<leader>ar"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc="Code Readability Analysis"},
   },
   i = {
     ['<C-c>'] = {'<Esc>'},
@@ -51,6 +60,18 @@ return {
     ["<leader>s"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = 'Substitute Current'},
     ["<leader>x"] = { "<cmd>!chmod +x %<CR>", desc = "Make Executible" },
     ["<leader>fp"] = { "<cmd> lua require('telescope').extensions.projects.projects() <cr>", desc='Find Projects'},
+
+    -- Chat GPT
+    ["<leader>a"] = { desc=" Chat GPT"},
+    ["<leader>ap"] = { "<cmd>ChatGPT<cr>", desc="Chat GPT Prompt"},
+    ["<leader>ac"] = { "<cmd>ChatGPTCompleteCode<cr>", desc="Complete Code"},
+    ["<leader>aa"] = { "<cmd>ChatGPTActAs<cr>", desc="Chat GPT Act As"},
+    ["<leader>ae"] = { "<cmd>ChatGPTRun explain_code<cr>", desc="Explain Code"},
+    ["<leader>as"] = { "<cmd>ChatGPTRun summarize_code<cr>", desc="Summarize Code"},
+    ["<leader>af"] = { "<cmd>ChatGPTRun fix_bugs<cr>", desc="Fix Bugs"},
+    ["<leader>ao"] = { "<cmd>ChatGPTRun optimize_code<cr>", desc="Optimize Code"},
+    ["<leader>ar"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc="Code Readability Analysis"},
+
 
     -- navigate buffer tabs with `H` and `L`
     L = {
