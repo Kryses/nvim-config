@@ -22,6 +22,8 @@ return {
     ["<leader>af"] = { "<cmd>ChatGPTRun fix_bugs<cr>", desc="Fix Bugs"},
     ["<leader>ao"] = { "<cmd>ChatGPTRun optimize_code<cr>", desc="Optimize Code"},
     ["<leader>ar"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc="Code Readability Analysis"},
+    ["<leader>at"] = { "<cmd>ChatGPTRun add_tests<cr>", desc="Add Tests"},
+    ["<leader>ad"] = { "<cmd>ChatGPTRun docstring<cr>", desc="Add Docstring"},
   },
   i = {
     ['<C-c>'] = {'<Esc>'},
@@ -62,7 +64,7 @@ return {
     ["<leader>fp"] = { "<cmd> lua require('telescope').extensions.projects.projects() <cr>", desc='Find Projects'},
 
     -- Chat GPT
-    ["<leader>a"] = { desc=" Chat GPT"},
+    ["<leader>a"] = { desc="󰭹 Chat GPT"},
     ["<leader>ap"] = { "<cmd>ChatGPT<cr>", desc="Chat GPT Prompt"},
     ["<leader>ac"] = { "<cmd>ChatGPTCompleteCode<cr>", desc="Complete Code"},
     ["<leader>aa"] = { "<cmd>ChatGPTActAs<cr>", desc="Chat GPT Act As"},
@@ -71,6 +73,8 @@ return {
     ["<leader>af"] = { "<cmd>ChatGPTRun fix_bugs<cr>", desc="Fix Bugs"},
     ["<leader>ao"] = { "<cmd>ChatGPTRun optimize_code<cr>", desc="Optimize Code"},
     ["<leader>ar"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc="Code Readability Analysis"},
+    ["<leader>at"] = { "<cmd>ChatGPTRun add_tests<cr>", desc="Add Tests"},
+    ["<leader>ad"] = { "<cmd>ChatGPTRun docstring<cr>", desc="Add Docstring"},
 
 
     -- navigate buffer tabs with `H` and `L`
