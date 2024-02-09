@@ -24,6 +24,7 @@ return {
     ["<leader>ar"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc="Code Readability Analysis"},
     ["<leader>at"] = { "<cmd>ChatGPTRun add_tests<cr>", desc="Add Tests"},
     ["<leader>ad"] = { "<cmd>ChatGPTRun docstring<cr>", desc="Add Docstring"},
+    ["<leader>ai"] = { "<cmd>ChatGPTEditWithInstructions<cr>", desc="Edit with Instructions"},
   },
   i = {
     ['<C-c>'] = {'<Esc>'},
