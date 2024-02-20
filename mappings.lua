@@ -30,7 +30,7 @@ return {
     ['<C-c>'] = {'<Esc>'},
     ["<C-y>"] = {  'copilot#Accept("<CR>")' ,
           expr = true,
-          replace_keycodes = false
+          replace_keycodes = false,
     },
   },
   n = {
