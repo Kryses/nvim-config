@@ -46,6 +46,7 @@ return {
       end,
       desc = "Next buffer",
     },
+    ["<A-J>"] = {"i<CR><Esc>"},
     ["J"] = {"mzJ`z"},
     ["<C-d>"] = {"<C-d>zz"},
     ["<C-u>"] = {"<C-u>zz"},
